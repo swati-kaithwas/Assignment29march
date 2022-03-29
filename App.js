@@ -1,3 +1,4 @@
+// creating a member of list
 function Member(name, expense) {
   (this.name = name), (this.expense = expense);
 }
@@ -11,6 +12,10 @@ function AddMember(swati, newMember) {
   swati[`member${Object.keys(swati).length + 1}`] = newMember;
   console.log(swati);
 }
+// function expense always add no;
+// add expenses
+// output clear visible
+
 function expenses(swati) {
   let totalexpense = 0;
   let averageexpense = 0;
@@ -31,7 +36,7 @@ function expenses(swati) {
     );
   }
 }
-
+// adding 30 rs;
 function toAdd30(swati) {
   console.log(swati);
   for (let k in swati) {
@@ -40,7 +45,7 @@ function toAdd30(swati) {
   }
   console.log(swati);
 }
-
+//  main function call
 function main() {
   const member1 = new Member("swati", 2500);
   const member2 = new Member("swatik", 2500);
